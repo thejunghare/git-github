@@ -1,2 +1,2 @@
 # play
-Free Github Master Class by @thejunghare
+Free Github Master class by @thejunghare with ❤
