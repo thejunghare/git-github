@@ -125,6 +125,8 @@ Making and commiting changes
 
   That is so funny! :joy:
 
+  :warning: **Warning:** Do not push the big red button.
+
 - Fenced Code Blocks
 
 ```
@@ -151,8 +153,8 @@ Making and commiting changes
 
 - Definition Lists
 
-First Term
-: This is the definition of the first term.
+  First Term
+  : This is the definition of the first term.
 
 - Strikethrough
   ~~The world is flat.~~ We now know that the world is round.
@@ -160,18 +162,39 @@ First Term
 - Task List
 
   - [x] Write the press release
-  - [ ] Update the website
-  - [ ] Contact the media
+  - [x] Update the website
+  - [x] Contact the media
 
 - Highlight
 
-I need to highlight these ==very important words==.
+  I need to highlight these ==very important words==.
 
 - Subscript & Superscript
 
-H~2~O
+  H~2~O
 
-X^2^
+  X^2^
+
+- Comments
+
+  Here's a paragraph that will be visible.
+
+  [This is a comment that will be hidden.]: #
+
+- Some things markdown does not support natively
+
+  - underline
+    - <ins>will be underlined</ins>.
+  - ident
+    - &nbsp;&nbsp;&nbsp;&nbsp;This is the first sentence of my indented paragraph.
+  - center
+    - <center>This text is centered.</center>
+    - <p style="text-align:center">Center this text</p>
+  - color
+
+    - <font color="red">This text is red!</font>
+
+  - Image size, image caption and more
 
 # Install Git
 
