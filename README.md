@@ -213,53 +213,106 @@ Making and commiting changes
 - Staging area
   - Information about what will go into your next commit.
 
-Command's
+## Command's
 
-Check git version
+1. Check git version
 
-    `git -v`
-    `git --version`
+  ```
+  git -v
+  ```
 
-Get git help
+  ```
+  git --version
+  ```
 
-    `git -h`
-    `git --help`
+2. Get git help
 
-To Know the username
+  ```
+  git -h
+  ```
 
-    git config user.name
+  ```
+  git --help
+  ```
 
-To Know the email
+3. To Know the username
 
-    git config user.email
+  ```
+  git config user.name
+  ```
 
-- Git init
+4. To Know the email
 
-  - Create an empty Git repository or reinitialize an existing one
-    `git init `
+  ```
+  git config user.email
+  ```
 
-  - Only print error and warning messages; all other output will be suppressed.
+5. Git init
+
+    - Create an empty Git repository or reinitialize an existing one
+
+        ```
+        git init
+        ```
+
+    - Only print error and warning messages; all other output will be suppressed.
+
+        ```
+        git init -q
+        ```
+
+        ```
+        git init --quite
+        ```
+
+    - Use the specified name for the initial branch in the newly created repository.
+
+        ```
+        git init -b master
+        ```
+
+        ```
+        git init --initial-branch master
+        ```
+
+    - Specify the directory from which templates will be used. (See the "TEMPLATE DIRECTORY" section below.)
+
+        ```
+        git init --template ./
+        ```
+
+    - use if repo will be shared with multiple users
+
+        ```
+        --shared
+        ```
+
+6. Git clone
+
+7. Git add
+
+    - Add file contents to the index
+
+        ```
+        git add .
+        ```
+
+        ```
+        git add all
+        ```
+
+        ```
+        git add filename
+        ```
+
+8. Git status
 
     ```
-    git init -q
-    git init --quite
+    git status
     ```
 
-  - Use the specified name for the initial branch in the newly created repository.
-
-    ```
-    git init -b master
-    git init --initial-branch master
-    ```
-
-  - Specify the directory from which templates will be used. (See the "TEMPLATE DIRECTORY" section below.)
-    ` git init --template ./`
-
-  - use if repo will be shared with multiple users
-
-    `--shared`
-
-- Git clone
-- Git add
 - Git diff
+
 - Git commit
+
+
