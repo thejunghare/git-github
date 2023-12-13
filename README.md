@@ -136,6 +136,7 @@ Making and commiting changes
 ```
 
 - Syntax Highlighting
+
 ```json
 {
   "firstName": "John",
@@ -143,13 +144,34 @@ Making and commiting changes
   "age": 25
 }
 ```
+
 - Heading IDs
-    ### My Great Heading {#heading-id}
+
+  ### My Great Heading {#heading-id}
 
 - Definition Lists
 
-    First Term
-     : This is the definition of the first term.
+First Term
+: This is the definition of the first term.
+
+- Strikethrough
+  ~~The world is flat.~~ We now know that the world is round.
+
+- Task List
+
+  - [x] Write the press release
+  - [ ] Update the website
+  - [ ] Contact the media
+
+- Highlight
+
+I need to highlight these ==very important words==.
+
+- Subscript & Superscript
+
+H~2~O
+
+X^2^
 
 # Install Git
 
