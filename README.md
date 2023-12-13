@@ -1,4 +1,4 @@
-# Git OR Github
+# Git Or Github
 
 - Git and Github are two different things.
 - Git is the version control system.
