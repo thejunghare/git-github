@@ -1,4 +1,4 @@
-# Git Or Github
+# Git OR Github
 
 - Git and Github are two different things.
 - Git is the version control system.
@@ -53,6 +53,12 @@ Making and commiting changes
 
 - Github forks local copy of a project folder/repository.
 - You can make a relevant chanages ask the owner to review changes
+
+![Github-fork](./Github-fork.gif "How does Fork work")
+
+<center>@TAPAS ADHIKARY FreeCodeCamp</center>
+
+# Working On Fork
 
 # About Markdown
 
@@ -228,3 +234,34 @@ To Know the username
 To Know the email
 
     git config user.email
+
+- Git init
+
+  - Create an empty Git repository or reinitialize an existing one
+    `git init `
+
+  - Only print error and warning messages; all other output will be suppressed.
+
+    ```
+    git init -q
+    git init --quite
+    ```
+
+  - Use the specified name for the initial branch in the newly created repository.
+
+    ```
+    git init -b master
+    git init --initial-branch master
+    ```
+
+  - Specify the directory from which templates will be used. (See the "TEMPLATE DIRECTORY" section below.)
+    ` git init --template ./`
+
+  - use if repo will be shared with multiple users
+
+    `--shared`
+
+- Git clone
+- Git add
+- Git diff
+- Git commit
