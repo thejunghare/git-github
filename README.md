@@ -211,108 +211,199 @@ Making and commiting changes
 - Working directory
   - User makes local changes to a project.
 - Staging area
+
   - Information about what will go into your next commit.
+
+  ![Github-fork](./naws3.png "3 section of git project")
+
+## Get Familiar with
+
+    - stash
+    - workspace
+        local checkout of your code also called as working tree or working copy or just checkout
+    - index
+        staging area for all yours files changes to commit before commit
+    - local repository
+        Your local .git directory
+    - upstream repository
+        It's hosted some where on internet
 
 ## Command's
 
 1. Check git version
 
-  ```
-  git -v
-  ```
+```
+git -v
+```
 
-  ```
-  git --version
-  ```
+```
+git --version
+```
 
 2. Get git help
 
-  ```
-  git -h
-  ```
+```
+git -h
+```
 
-  ```
-  git --help
-  ```
+```
+git --help
+```
 
 3. To Know the username
 
-  ```
-  git config user.name
-  ```
+```
+git config user.name
+```
 
 4. To Know the email
 
-  ```
-  git config user.email
-  ```
+```
+git config user.email
+```
 
-5. Git init
+5.  Git init
 
     - Create an empty Git repository or reinitialize an existing one
 
-        ```
-        git init
-        ```
+      ```
+      git init
+      ```
 
     - Only print error and warning messages; all other output will be suppressed.
 
-        ```
-        git init -q
-        ```
+      ```
+      git init -q
+      ```
 
-        ```
-        git init --quite
-        ```
+      ```
+      git init --quite
+      ```
 
     - Use the specified name for the initial branch in the newly created repository.
 
-        ```
-        git init -b master
-        ```
+      ```
+      git init -b master
+      ```
 
-        ```
-        git init --initial-branch master
-        ```
+      ```
+      git init --initial-branch master
+      ```
 
     - Specify the directory from which templates will be used. (See the "TEMPLATE DIRECTORY" section below.)
 
-        ```
-        git init --template ./
-        ```
+      ```
+      git init --template ./
+      ```
 
     - use if repo will be shared with multiple users
 
-        ```
-        --shared
-        ```
+      ```
+      --shared
+      ```
 
-6. Git clone
+6.  Git clone
 
-7. Git add
+    - Clone Repositories
+
+    ```
+    git clone <repository_url> <directory_name>
+    ```
+
+    - Clone Branch
+
+    ```
+    git clone -b <branch_name> <repository_url>
+    ```
+
+7.  Git add
 
     - Add file contents to the index
 
-        ```
-        git add .
-        ```
+      ```
+      git add .
+      ```
 
-        ```
-        git add all
-        ```
+      ```
+      git add all
+      ```
 
-        ```
-        git add filename
-        ```
+      ```
+      git add -A
+      ```
 
-8. Git status
+      ```
+      git add filename
+      ```
+
+    - Don’t actually add the file(s), just show if they exist and/or will be ignored.
+
+      ```
+      git add --dry-run README.md
+      ```
+
+    - Allow adding otherwise ignored files.
+
+      ```
+      git add -f eg*.css
+      ```
+
+    - Record only the fact that the path will be added later. An entry for the path is placed in the index with no content.
+
+      ```
+      git add -N eg*.css
+      ```
+
+    - Don’t add the file(s), but only refresh their stat() information in the index.
+
+      ```
+      git add --refresh
+      ```
+
+8.  Git status
 
     ```
     git status
     ```
 
-- Git diff
+    ```
+    git status -s
+    ```
 
-- Git commit
+    ```
+    git status --short
+    ```
 
+    ```
+    git status --long
+    ```
 
+    ```
+    git status --branch
+    ```
+
+    ```
+    git status --show-stash
+    ```
+
+    ```
+    git status --u all
+    ```
+
+9.  Git commit
+
+```
+git commit -m  "commit message"
+```
+
+- If you want to add changes to the last commit (perhaps you forgot to include something), use --amend
+
+  ```
+  git commit --amend
+  ```
+
+10. Git diff
+    - see diff between two commit
+      ```
+      git diff <commit-hash> -- *filename.js
+      ```
