@@ -219,14 +219,21 @@ Making and commiting changes
 ## Get Familiar with
 
     - stash
-    - workspace
-        local checkout of your code also called as working tree or working copy or just checkout
-    - index
-        staging area for all yours files changes to commit before commit
-    - local repository
-        Your local .git directory
-    - upstream repository
-        It's hosted some where on internet
+      To gain the ability to work simultaneously on multiple branches.
+
+- git worktree
+
+- workspace
+  local checkout of your code also called as working tree or working copy or just checkout.
+
+- index
+  staging area for all yours files changes to commit before commit.
+
+- local repository
+  Your local .git directory.
+
+- upstream repository
+  It's hosted some where on internet.
 
 ## Command's
 
@@ -403,7 +410,59 @@ git commit -m  "commit message"
   ```
 
 10. Git diff
+
     - see diff between two commit
       ```
       git diff <commit-hash> -- *filename.js
       ```
+
+11. Git branch
+
+  - Create branch
+
+    ```
+    git branch <branch-name>
+    ```
+
+
+  - list branch
+
+    ```
+    git branch -l
+    ```
+
+    ```
+    git branch --list
+    ```
+
+
+  - delete branch
+
+    ```
+    git branch -d <branch-name>
+    ```
+
+    ```
+    git branch --delete <branch-name>
+    ```
+
+  - rename branch
+
+    ```
+    git branch -m <old-branch-name> <new-branch-name>
+    ```
+
+    ```
+    git branch -move <old-branch-name> <new-branch-name>
+    ```
+
+  - Change branch
+
+    ```
+    git switch <branch-name>
+    ```
+
+    ```
+    git checkout <branch-name>
+    ```
+
