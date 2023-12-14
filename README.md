@@ -202,7 +202,7 @@ Making and commiting changes
 
 # Install Git
 
-- Windows: Download
+- Windows: [Download](https://git-scm.com/downloads)
 
 # Three section of a Git Project
 
@@ -263,13 +263,31 @@ git --help
 git config user.name
 ```
 
-4. To Know the email
+4. Set username
+
+```
+git config user.name "<username>"
+```
+
+5. Set email
+
+```
+git config user.email "<email>"
+```
+
+6. Set default branch name
+
+```
+git config --global init.defaultBranch main
+```
+
+7. To Know the email
 
 ```
 git config user.email
 ```
 
-5.  Git init
+8.  Git init
 
     - Create an empty Git repository or reinitialize an existing one
 
@@ -309,7 +327,7 @@ git config user.email
       --shared
       ```
 
-6.  Git clone
+9.  Git clone
 
     - Clone Repositories
 
@@ -323,7 +341,7 @@ git config user.email
     git clone -b <branch_name> <repository_url>
     ```
 
-7.  Git add
+10. Git add
 
     - Add file contents to the index
 
@@ -367,7 +385,7 @@ git config user.email
       git add --refresh
       ```
 
-8.  Git status
+11. Git status
 
     ```
     git status
@@ -397,7 +415,7 @@ git config user.email
     git status --u all
     ```
 
-9.  Git commit
+12. Git commit
 
 ```
 git commit -m  "commit message"
@@ -409,60 +427,80 @@ git commit -m  "commit message"
   git commit --amend
   ```
 
-10. Git diff
+13. Git diff
 
     - see diff between two commit
       ```
       git diff <commit-hash> -- *filename.js
       ```
 
-11. Git branch
+14. Git branch
 
-  - Create branch
+- Create branch
+
+  ```
+  git branch <branch-name>
+  ```
+
+- list branch
+
+  ```
+  git branch -l
+  ```
+
+  ```
+  git branch --list
+  ```
+
+- delete branch
+
+  ```
+  git branch -d <branch-name>
+  ```
+
+  ```
+  git branch --delete <branch-name>
+  ```
+
+- rename branch
+
+  ```
+  git branch -m <old-branch-name> <new-branch-name>
+  ```
+
+  ```
+  git branch -move <old-branch-name> <new-branch-name>
+  ```
+
+- Change branch
+
+  ```
+  git switch <branch-name>
+  ```
+
+  ```
+  git checkout <branch-name>
+  ```
+
+15. git remove/ rename
 
     ```
-    git branch <branch-name>
-    ```
-
-
-  - list branch
-
-    ```
-    git branch -l
+      git rm <filename>
     ```
 
     ```
-    git branch --list
+      git mv <old-file-name> <new-file-name>
     ```
 
-
-  - delete branch
-
-    ```
-    git branch -d <branch-name>
-    ```
+16. untrack files
 
     ```
-    git branch --delete <branch-name>
+      git rm --cached <filename>
     ```
-
-  - rename branch
-
-    ```
-    git branch -m <old-branch-name> <new-branch-name>
-    ```
-
-    ```
-    git branch -move <old-branch-name> <new-branch-name>
-    ```
-
-  - Change branch
-
-    ```
-    git switch <branch-name>
-    ```
-
-    ```
-    git checkout <branch-name>
-    ```
-
+17. unmodify changes
+````
+   git checkout --filename
+````
+````
+   git checkout -f
+````
